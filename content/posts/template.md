@@ -1,6 +1,6 @@
 ---
-title: "{{ Title }}"
-date: {{ .Date }}
+title: "文章标题"
+date: 2026-04-14
 draft: true
 tags: []
 categories: []
