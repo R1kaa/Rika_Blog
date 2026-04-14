@@ -1,0 +1,42 @@
+baseURL = "https://R1kaa.github.io/"
+languageCode = "zh-cn"
+title = "Rika's Tech Blog"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[params]
+  author = "Rika"
+  description = "游戏开发 / AI / RL 学习笔记"
+  keywords = ["游戏开发", "人工智能", "强化学习", "Unity", "Python"]
+  
+[[params.socialLinks]]
+  name = "GitHub"
+  url = "https://github.com/R1kaa"
+
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "projects"
+  name = "项目"
+  url = "/projects/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "rl-notes"
+  name = "RL笔记"
+  url = "/rl-notes/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "llm-notes"
+  name = "LLM笔记"
+  url = "/llm-notes/"
+  weight = 4
+
+[markup.highlight]
+  codeFences = true
+  lineNos = true
