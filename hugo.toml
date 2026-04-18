@@ -8,6 +8,24 @@ enableRobotsTXT = true
   author = "Rika"
   description = "游戏开发 / AI / RL 学习笔记"
   keywords = ["游戏开发", "人工智能", "强化学习", "Unity", "Python"]
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  disableSpecial1stPost = true
+  mainSections = ["posts", "projects"]
+
+  [params.label]
+    text = "Rika"
+
+  [params.homeInfoParams]
+    Title = "Rika's Tech Blog"
+    Content = "游戏开发 / AI / RL 学习笔记"
   
 [[params.socialIcons]]
   name = "github"

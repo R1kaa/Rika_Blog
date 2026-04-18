@@ -1,0 +1,41 @@
+:root {
+:  --content: #111827;
+:  --primary: #0f172a;
+:  --secondary: #4b5563;
+:  --tertiary: #6b7280;
+:  --link-color: #2563eb;
+:  --code-bg: #f3f4f6;
+:  --hljs-bg: #0b1020;
+:  --radius: 14px;
+:}
+@media (prefers-color-scheme: dark) {
+:  :root {
+:    --content: #e5e7eb;
+:    --primary: #f3f4f6;
+:    --secondary: #9ca3af;
+:    --tertiary: #6b7280;
+:    --link-color: #60a5fa;
+:    --code-bg: #0b1020;
+:    --hljs-bg: #0b1020;
+:  }
+:}
+
+.main {
+:  max-width: 880px;
+:}
+
+.post-content {
+:  line-height: 1.78;
+:}
+
+a {
+:  color: var(--link-color);
+:}
+
+.entry-header h1 {
+:  letter-spacing: -0.02em;
+:}
+
+.home-info .entry-content {
+:  font-size: 1.03rem;
+:}
