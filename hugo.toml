@@ -9,8 +9,8 @@ enableRobotsTXT = true
   description = "游戏开发 / AI / RL 学习笔记"
   keywords = ["游戏开发", "人工智能", "强化学习", "Unity", "Python"]
   
-[[params.socialLinks]]
-  name = "GitHub"
+[[params.socialIcons]]
+  name = "github"
   url = "https://github.com/R1kaa"
 
 [[menu.main]]

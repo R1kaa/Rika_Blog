@@ -9,10 +9,8 @@ blog/
 ├── content/           # 文章内容
 │   ├── posts/        # 通用文章
 │   ├── projects/     # 项目记录
-│   ├── rl-notes/     # RL学习笔记
-│   └── llm-notes/    # LLM学习笔记
-├── static/           # 静态资源
-├── hugo.yaml         # 配置文件
+├── .github/          # GitHub Actions
+├── hugo.toml         # Hugo 配置文件
 └── deploy.sh        # 部署脚本
 ```
 
@@ -20,15 +18,19 @@ blog/
 
 - **posts/** - 通用技术文章
 - **projects/** - 项目记录（毕设、项目经历）
-- **rl-notes/** - 强化学习笔记
-- **llm-notes/** - 大模型笔记
-- **notes/** - 其他学习笔记
+- **rl-notes/** - 强化学习笔记（可选，自行创建目录）
+- **llm-notes/** - 大模型笔记（可选，自行创建目录）
+- **notes/** - 其他学习笔记（可选，自行创建目录）
 
 ## 本地预览
 
 ```bash
-# 安装 Hugo（macOS）
-brew install hugo
+# 安装 Hugo
+# macOS: brew install hugo
+# Windows: choco install hugo-extended -y  (或 Scoop / 手动安装)
+
+# 安装 PaperMod 主题（本项目默认不把主题提交进仓库）
+git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
 
 # 本地预览
 hugo server -D
@@ -39,6 +41,7 @@ hugo server -D
 1. Fork 这个仓库，或创建新的 GitHub 仓库
 2. 在仓库 Settings -> Pages 中选择 gh-pages 分支
 3. 推送到 main 分支后，GitHub Actions 会自动部署
+4. GitHub Actions 会根据仓库类型（用户页/项目页）自动注入正确的 baseURL
 
 ## 写作流程
 
