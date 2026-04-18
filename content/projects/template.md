@@ -1,12 +1,13 @@
 ---
 title: "{{ Project Name }}"
-date: {{ .Date }}
-draft: false
+date: 1970-01-01T00:00:00Z
+draft: true
 tags: []
 categories: [Projects]
 description: ""
 github: ""
 thumbnail: ""
+---
 
 ## 项目简介
 

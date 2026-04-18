@@ -7,6 +7,7 @@ categories: ["RL笔记", "Projects"]
 description: "毕设开题记录，记录研究背景、目标和技术方案"
 github: ""
 thumbnail: ""
+---
 
 ## 研究背景
 
