@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://R1kaa.github.io/Rika_Blog/sitemap.xml
