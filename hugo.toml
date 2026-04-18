@@ -31,7 +31,7 @@ enableRobotsTXT = true
     enabled = true
     title = "Rika"
     subtitle = "创作（MAD / VOCALOID） · 学术（GitHub / 项目）"
-    imageUrl = "/images/avatar.jpg"
+    imageUrl = "images/avatar.jpg"
     imageTitle = "avatar"
     imageWidth = 140
     imageHeight = 140
@@ -41,20 +41,8 @@ enableRobotsTXT = true
     url = "https://space.bilibili.com/518845311"
 
   [[params.profileMode.buttons]]
-    name = "MAD"
-    url = "/works/mad/"
-
-  [[params.profileMode.buttons]]
     name = "GitHub"
     url = "https://github.com/R1kaa"
-
-  [[params.profileMode.buttons]]
-    name = "项目"
-    url = "/projects/"
-
-  [[params.profileMode.buttons]]
-    name = "VOCALOID"
-    url = "/works/vocaloid/"
   
 [[params.socialIcons]]
   name = "github"

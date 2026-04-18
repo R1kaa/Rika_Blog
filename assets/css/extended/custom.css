@@ -44,7 +44,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("/images/bg-pattern.svg");
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAiIGhlaWdodD0iMTYwIiB2aWV3Qm94PSIwIDAgMTYwIDE2MCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWM0ODk5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E3OGJmYSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjE2MCIgaGVpZ2h0PSIxNjAiIGZpbGw9InRyYW5zcGFyZW50Ii8+CiAgPGcgZmlsbD0idXJsKCNnKSIgb3BhY2l0eT0iMC41NSI+CiAgICA8cGF0aCBkPSJNMjggMjRsNCAxMCAxMCA0LTEwIDQtNCAxMC00LTEwLTEwLTQgMTAtNHoiLz4KICAgIDxwYXRoIGQ9Ik0xMzIgMzBsMyA4IDggMy04IDMtMyA4LTMtOC04LTMgOC0zeiIvPgogICAgPHBhdGggZD0iTTEyMCAxMThsNCAxMCAxMCA0LTEwIDQtNCAxMC00LTEwLTEwLTQgMTAtNHoiLz4KICAgIDxwYXRoIGQ9Ik00MiAxMThsMyA4IDggMy04IDMtMyA4LTMtOC04LTMgOC0zeiIvPgogIDwvZz4KICA8ZyBmaWxsPSIjNjBhNWZhIiBvcGFjaXR5PSIwLjQwIj4KICAgIDxjaXJjbGUgY3g9IjgyIiBjeT0iNDYiIHI9IjIuMiIvPgogICAgPGNpcmNsZSBjeD0iOTgiIGN5PSI1OCIgcj0iMS44Ii8+CiAgICA8Y2lyY2xlIGN4PSI2NCIgY3k9IjcyIiByPSIxLjYiLz4KICAgIDxjaXJjbGUgY3g9IjkyIiBjeT0iOTYiIHI9IjIuMCIvPgogICAgPGNpcmNsZSBjeD0iNzAiIGN5PSIxMTAiIHI9IjEuNyIvPgogIDwvZz4KPC9zdmc+Cg==");
   background-repeat: repeat;
   opacity: 0.12;
   pointer-events: none;
@@ -148,41 +148,18 @@ a:hover {
   background: linear-gradient(135deg, rgba(236, 72, 153, 0.26), rgba(251, 113, 133, 0.14));
 }
 
-.profile .buttons a[href*="/works/mad/"] {
-  border-color: rgba(236, 72, 153, 0.32);
-  background: linear-gradient(135deg, rgba(236, 72, 153, 0.22), rgba(167, 139, 250, 0.14));
-}
-
-.profile .buttons a[href*="/works/vocaloid/"] {
-  border-color: rgba(236, 72, 153, 0.28);
-  background: linear-gradient(135deg, rgba(236, 72, 153, 0.18), rgba(167, 139, 250, 0.14));
-}
-
 .profile .buttons a[href*="github"] {
   border-color: rgba(167, 139, 250, 0.35);
   background: linear-gradient(135deg, rgba(167, 139, 250, 0.26), rgba(96, 165, 250, 0.14));
 }
 
-.profile .buttons a[href*="/projects/"] {
-  border-color: rgba(96, 165, 250, 0.30);
-  background: linear-gradient(135deg, rgba(96, 165, 250, 0.20), rgba(167, 139, 250, 0.12));
-}
-
-.profile .buttons a[href*="bilibili"]::before,
-.profile .buttons a[href*="/works/mad/"]::before {
+.profile .buttons a[href*="bilibili"]::before {
   content: "♪";
   font-weight: 700;
   opacity: 0.9;
 }
 
-.profile .buttons a[href*="/works/vocaloid/"]::before {
-  content: "♬";
-  font-weight: 700;
-  opacity: 0.9;
-}
-
-.profile .buttons a[href*="github"]::before,
-.profile .buttons a[href*="/projects/"]::before {
+.profile .buttons a[href*="github"]::before {
   content: "✦";
   font-weight: 700;
   opacity: 0.9;
