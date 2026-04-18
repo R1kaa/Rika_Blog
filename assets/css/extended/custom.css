@@ -122,6 +122,12 @@ a:hover {
     0 0 0 7px rgba(236, 72, 153, 0.18);
 }
 
+.profile .buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
 .profile .buttons a,
 .home-info .buttons a,
 .buttons a {
@@ -129,6 +135,63 @@ a:hover {
   border: 1px solid rgba(236, 72, 153, 0.22);
   background: linear-gradient(135deg, rgba(236, 72, 153, 0.18), rgba(167, 139, 250, 0.18));
   transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
+}
+
+.profile .buttons a {
+  justify-content: center;
+  gap: 10px;
+  letter-spacing: 0.01em;
+}
+
+.profile .buttons a[href*="bilibili"] {
+  border-color: rgba(236, 72, 153, 0.32);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.26), rgba(251, 113, 133, 0.14));
+}
+
+.profile .buttons a[href*="/works/mad/"] {
+  border-color: rgba(236, 72, 153, 0.32);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.22), rgba(167, 139, 250, 0.14));
+}
+
+.profile .buttons a[href*="/works/vocaloid/"] {
+  border-color: rgba(236, 72, 153, 0.28);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.18), rgba(167, 139, 250, 0.14));
+}
+
+.profile .buttons a[href*="github"] {
+  border-color: rgba(167, 139, 250, 0.35);
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.26), rgba(96, 165, 250, 0.14));
+}
+
+.profile .buttons a[href*="/projects/"] {
+  border-color: rgba(96, 165, 250, 0.30);
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.20), rgba(167, 139, 250, 0.12));
+}
+
+.profile .buttons a[href*="bilibili"]::before,
+.profile .buttons a[href*="/works/mad/"]::before {
+  content: "♪";
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.profile .buttons a[href*="/works/vocaloid/"]::before {
+  content: "♬";
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.profile .buttons a[href*="github"]::before,
+.profile .buttons a[href*="/projects/"]::before {
+  content: "✦";
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+@media (max-width: 520px) {
+  .profile .buttons {
+    grid-template-columns: 1fr;
+  }
 }
 
 .profile .buttons a:hover,

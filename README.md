@@ -9,18 +9,31 @@ blog/
 ├── content/           # 文章内容
 │   ├── posts/        # 通用文章
 │   ├── projects/     # 项目记录
+│   └── works/        # 创作内容（MAD / VOCALOID）
+├── assets/           # 自定义样式（PaperMod 扩展）
+├── static/           # 静态资源（头像、背景图等）
 ├── .github/          # GitHub Actions
 ├── hugo.toml         # Hugo 配置文件
 └── deploy.sh        # 部署脚本
 ```
 
-## 文章分类
+## 内容板块
 
 - **posts/** - 通用技术文章
 - **projects/** - 项目记录（毕设、项目经历）
+- **works/** - 创作内容（MAD / VOCALOID）
 - **rl-notes/** - 强化学习笔记（可选，自行创建目录）
 - **llm-notes/** - 大模型笔记（可选，自行创建目录）
 - **notes/** - 其他学习笔记（可选，自行创建目录）
+
+## 主页设计
+
+主页分为两大板块：
+
+- **创作**：MAD 与 VOCALOID（入口：`/works/mad/`、`/works/vocaloid/`，并链接到 B 站主页）
+- **学术**：GitHub 与项目（入口：`/projects/` 与 GitHub 主页）
+
+相关配置在 `hugo.toml`，自定义样式在 `assets/css/extended/custom.css`，头像默认使用 `static/images/avatar.jpg`。
 
 ## 本地预览
 
@@ -49,6 +62,11 @@ hugo server -D
 2. 修改 front matter 中的元信息
 3. 写完文章后将 `draft: true` 改为 `draft: false`
 4. 推送后自动部署
+
+创作内容建议按分区写在：
+
+- `content/works/mad/`（MAD）
+- `content/works/vocaloid/`（VOCALOID）
 
 ## 示例文章
 
