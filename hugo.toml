@@ -26,6 +26,27 @@ enableRobotsTXT = true
   [params.homeInfoParams]
     Title = "Rika's Tech Blog"
     Content = "游戏开发 / AI / RL 学习笔记"
+
+  [params.profileMode]
+    enabled = true
+    title = "Rika"
+    subtitle = "游戏开发 / AI / RL · 记录与沉淀"
+    imageUrl = "/images/avatar.jpg"
+    imageTitle = "avatar"
+    imageWidth = 140
+    imageHeight = 140
+
+  [[params.profileMode.buttons]]
+    name = "文章"
+    url = "/posts/"
+
+  [[params.profileMode.buttons]]
+    name = "项目"
+    url = "/projects/"
+
+  [[params.profileMode.buttons]]
+    name = "GitHub"
+    url = "https://github.com/R1kaa"
   
 [[params.socialIcons]]
   name = "github"
