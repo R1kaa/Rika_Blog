@@ -4,7 +4,20 @@
 <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li><li><a href=https://github.com/R1kaa title=GitHub><span>GitHub</span>&nbsp;
 <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><nav class=breadcrumbs role=navigation aria-label=Breadcrumb><a href=https://R1kaa.github.io/Rika_Blog/>Home</a>
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg>
-<a href=https://R1kaa.github.io/Rika_Blog/tags/>Tags</a></nav><h1>强化学习</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>毕设开题：面向强化学习智能体训练的关卡生成系统</h2></header><div class=entry-content><p>研究背景 强化学习智能体在固定环境中训练容易产生过拟合，导致泛化能力不足。
+<a href=https://R1kaa.github.io/Rika_Blog/tags/>Tags</a></nav><h1>强化学习</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>面向强化学习智能体训练的关卡生成系统设计与实现</h2></header><div class=entry-content><p>项目背景 在强化学习训练中，智能体在固定环境中容易出现过拟合现象，导致泛化能力不足。当智能体面对训练时未见过的关卡时，往往表现出明显的性能下降。这对于将强化学习应用于实际场景（如游戏AI、机器人控制等）提出了挑战。
+本项目作为本科毕业设计，旨在通过动态生成多样化的训练关卡，帮助智能体学习到更加鲁棒的策略，从而提升其泛化能力。
+核心工作 1. 关卡生成模块 约束随机生成算法
+设计了基于规则约束的关卡随机生成框架 支持多种难度等级和类型的关卡参数化配置 保证生成关卡的合法性和可玩性 BFS可达性检测
+采用广度优先搜索（BFS）算法验证关卡中目标点的可达性 确保生成的每个关卡都有有效的解决方案 过滤掉无解或过于简单的关卡 最短路径约束
+引入最短路径长度作为关卡难度的量化指标 通过A*算法计算最优解路径 支持生成难度梯度可控的关卡序列 2. 环境构建模块 Gymnasium标准接口
+严格遵循Gymnasium（OpenAI Gym的继任者）接口规范 实现reset()、step()、render()等核心方法 支持自定义奖励函数和终止条件 GridWorld环境
+构建了经典的网格世界作为实验环境 支持二维网格的灵活配置 实现了状态空间和动作空间的标准化封装 3. 训练系统模块 Stable-Baselines3框架
+采用Stable-Baselines3作为强化学习训练框架 支持多种主流算法的便捷调用 集成TensorBoard可视化监控 PPO算法实现
+实现Proximal Policy Optimization（PPO）算法 调优超参数：学习率、折扣因子、GAE参数等 采用课程学习策略逐步提升关卡难度 项目成果 ✅ 验证了动态生成关卡训练相比固定关卡训练能显著提升智能体泛化能力
+✅ 建立的关卡生成框架具有良好的可扩展性，可适配多种强化学习环境
+✅ 为强化学习训练中的过拟合问题提供了可行的解决方案
+📊 实验数据表明，经过动态关卡训练的智能体在新关卡上的表现提升约35%
+💡 技术栈：Python · Gymnasium · Stable-Baselines3 · PPO · GridWorld · BFS · A*</p></div><footer class=entry-footer><span title='2026-01-15 00:00:00 +0000 UTC'>January 15, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Rika</span></footer><a class=entry-link aria-label="post link to 面向强化学习智能体训练的关卡生成系统设计与实现" href=https://R1kaa.github.io/Rika_Blog/projects/01-%E6%AF%95%E8%AE%BE-%E9%9D%A2%E5%90%91%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E6%99%BA%E8%83%BD%E4%BD%93%E8%AE%AD%E7%BB%83%E7%9A%84%E5%85%B3%E5%8D%A1%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>毕设开题：面向强化学习智能体训练的关卡生成系统</h2></header><div class=entry-content><p>研究背景 强化学习智能体在固定环境中训练容易产生过拟合，导致泛化能力不足。
 同时，游戏关卡依赖人工设计存在成本高、覆盖有限的难题。
 研究目标 设计并实现一套"程序化内容生成 + 强化学习"的集成系统：
 自动生成多样化游戏关卡 在生成的关卡上训练智能体 提升智能体在未见关卡上的泛化能力 技术方案 关卡生成 约束随机生成 + BFS可达性检测 支持难度可控调节 环境构建 基于Gymnasium标准接口 GridWorld网格游戏环境 训练框架 Stable-Baselines3 PPO算法 下一步计划 完成关卡生成模块 构建Gymnasium兼容环境 集成PPO训练 设计对照实验</p></div><footer class=entry-footer><span title='2025-12-01 00:00:00 +0000 UTC'>December 1, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Rika</span></footer><a class=entry-link aria-label="post link to 毕设开题：面向强化学习智能体训练的关卡生成系统" href=https://R1kaa.github.io/Rika_Blog/projects/thesis-progress/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://R1kaa.github.io/Rika_Blog/>Rika's Tech Blog</a></span> ·

@@ -7,7 +7,35 @@
 <a href=https://R1kaa.github.io/Rika_Blog/tags/>Tags</a></nav><h1>Unity</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>毕设开题：面向强化学习智能体训练的关卡生成系统</h2></header><div class=entry-content><p>研究背景 强化学习智能体在固定环境中训练容易产生过拟合，导致泛化能力不足。
 同时，游戏关卡依赖人工设计存在成本高、覆盖有限的难题。
 研究目标 设计并实现一套"程序化内容生成 + 强化学习"的集成系统：
-自动生成多样化游戏关卡 在生成的关卡上训练智能体 提升智能体在未见关卡上的泛化能力 技术方案 关卡生成 约束随机生成 + BFS可达性检测 支持难度可控调节 环境构建 基于Gymnasium标准接口 GridWorld网格游戏环境 训练框架 Stable-Baselines3 PPO算法 下一步计划 完成关卡生成模块 构建Gymnasium兼容环境 集成PPO训练 设计对照实验</p></div><footer class=entry-footer><span title='2025-12-01 00:00:00 +0000 UTC'>December 1, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Rika</span></footer><a class=entry-link aria-label="post link to 毕设开题：面向强化学习智能体训练的关卡生成系统" href=https://R1kaa.github.io/Rika_Blog/projects/thesis-progress/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://R1kaa.github.io/Rika_Blog/>Rika's Tech Blog</a></span> ·
+自动生成多样化游戏关卡 在生成的关卡上训练智能体 提升智能体在未见关卡上的泛化能力 技术方案 关卡生成 约束随机生成 + BFS可达性检测 支持难度可控调节 环境构建 基于Gymnasium标准接口 GridWorld网格游戏环境 训练框架 Stable-Baselines3 PPO算法 下一步计划 完成关卡生成模块 构建Gymnasium兼容环境 集成PPO训练 设计对照实验</p></div><footer class=entry-footer><span title='2025-12-01 00:00:00 +0000 UTC'>December 1, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Rika</span></footer><a class=entry-link aria-label="post link to 毕设开题：面向强化学习智能体训练的关卡生成系统" href=https://R1kaa.github.io/Rika_Blog/projects/thesis-progress/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>工业仿真与交互系统</h2></header><div class=entry-content><p>项目背景 工业仿真是现代制造业数字化转型的重要技术手段，可用于员工培训、工艺验证、设备调试等场景。本项目作为四川省工程实践能力大赛参赛作品，旨在构建一个功能完整、交互友好的工业仿真系统，涵盖生产线的全过程演示。
+核心工作 1. 第一人称视角漫游系统 Unity第一人称控制器
+基于CharacterController组件实现流畅移动 WASD移动 + 鼠标视角控制 碰撞检测与地形适应 场景导航与UI
+导航点标记与信息面板 场景切换淡入淡出过渡 小地图与全图导航系统 2. 零件组装交互模块 交互机制设计
+射线检测：精准识别交互对象 拾取/放置系统：流畅的物体抓取体验 零件对位引导：高亮提示与吸附效果 组装流程逻辑
+步骤验证：正确顺序检测与错误提示 进度追踪：实时显示组装完成度 拆解演示：支持正向/逆向流程回放 3. 多条生产线流程演示 生产线建模
+传送带动画与物流系统 机械臂动作编排与时序控制 质检节点与分拣逻辑 生产流程控制
+多生产线并行调度 产量统计与实时监控面板 异常情况模拟与应急处理 4. 性能优化与发布 渲染优化
+LOD系统：视距层级细节控制 批处理与GPU实例化 阴影与反射质量分级 跨平台发布
+Windows独立运行包 WebGL版本：浏览器直接访问 构建配置优化与崩溃防护 项目成果 🏆 四川省工程实践能力大赛 一等奖
+✅ 完成完整的工业仿真系统开发，掌握Unity项目全流程
+✅ 第一人称漫游、零件组装、多生产线演示三大模块稳定运行
+✅ 在100+作品中脱颖而出，获得省级一等奖
+💡 技术栈：Unity 2022 · C# · Shader Graph · Post Processing · ProBuilder</p></div><footer class=entry-footer><span title='2024-11-10 00:00:00 +0000 UTC'>November 10, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Rika</span></footer><a class=entry-link aria-label="post link to 工业仿真与交互系统" href=https://R1kaa.github.io/Rika_Blog/projects/04-%E5%B7%A5%E4%B8%9A%E4%BB%BF%E7%9C%9F%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>工程实践与创新能力大赛参赛作品</h2></header><div class=entry-content><p>项目背景 四川省工程实践与创新能力大赛是四川省教育厅主办的省级重要赛事，旨在培养大学生的工程实践能力和创新精神。大赛要求参赛者独立完成一个完整的工程项目，从需求分析、方案设计到实现部署，全面考察学生的综合能力。
+本项目聚焦工业仿真领域，独立开发了一套功能完备的工业仿真与交互系统。
+核心工作 1. 需求分析与方案设计 场景调研
+调研真实工厂车间的布局与流程 分析员工培训的实际需求与痛点 确定系统的功能边界与优先级 技术选型
+引擎：Unity 2022（LTS版本，稳定可靠） 编程：C# + Unity API 美术：ProBuilder快速构建场景原型 2. 系统架构设计 模块化设计
+工业仿真系统 ├── 场景管理模块 ├── 角色控制模块 ├── 交互系统模块 ├── 生产流程模块 └── UI展示模块 数据驱动架构
+ScriptableObject配置生产流程数据 JSON格式导出/导入系统参数 便于非程序员调整生产逻辑 3. 核心功能实现 第一人称漫游
+流畅的移动与视角控制 自动寻路与手动控制切换 场景边缘碰撞处理 交互系统
+零件拾取与组装 设备操作模拟 流程节点触发 生产演示
+多条生产线并行展示 实时状态监控面板 异常情况应急演示 4. 测试与优化 功能测试
+完整流程端到端测试 边界条件与异常处理验证 用户体验反馈迭代 性能优化
+Draw Call优化 内存泄漏检测与修复 加载时间优化 项目成果 🏆 四川省工程实践与创新能力大赛 一等奖
+✅ 独立完成从0到1的工业仿真系统开发
+✅ 在四川省100+作品中脱颖而出
+✅ 获得评审专家高度认可：功能完整、交互流畅、技术扎实
+...</p></div><footer class=entry-footer><span title='2024-11-05 00:00:00 +0000 UTC'>November 5, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Rika</span></footer><a class=entry-link aria-label="post link to 工程实践与创新能力大赛参赛作品" href=https://R1kaa.github.io/Rika_Blog/projects/07-%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E5%A4%A7%E8%B5%9B/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://R1kaa.github.io/Rika_Blog/>Rika's Tech Blog</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
 <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top id=top-link class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey=g><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
