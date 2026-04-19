@@ -33,7 +33,7 @@ blog/
 - **创作**：MAD 与 VOCALOID（入口：`/works/mad/`、`/works/vocaloid/`，并链接到 B 站主页）
 - **学术**：GitHub 与项目（入口：`/projects/` 与 GitHub 主页）
 
-相关配置在 `hugo.toml`，自定义样式在 `assets/css/extended/custom.css`，头像默认使用 `static/images/avatar.jpg`。
+相关配置在 `hugo.toml`，主页内容在 `content/_index.md`，自定义样式在 `assets/css/extended/custom.css`，头像默认使用 `static/images/avatar.jpg`。
 
 ## 本地预览
 

@@ -87,3 +87,6 @@ enableRobotsTXT = true
 [markup.highlight]
   codeFences = true
   lineNos = true
+
+[markup.goldmark.renderer]
+  unsafe = true

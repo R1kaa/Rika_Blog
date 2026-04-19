@@ -194,3 +194,79 @@ pre {
     animation: floaty 6.5s ease-in-out infinite;
   }
 }
+
+.rika-home {
+  margin-top: 18px;
+}
+
+.rika-home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.rika-home-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--entry);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(10px);
+  padding: 18px 18px 16px;
+}
+
+.rika-home-card h2 {
+  margin: 0 0 6px 0;
+  letter-spacing: -0.02em;
+}
+
+.rika-home-card p {
+  margin: 0 0 12px 0;
+  color: var(--secondary);
+}
+
+.rika-home-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.rika-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.14), rgba(167, 139, 250, 0.12));
+  text-decoration: none;
+}
+
+.rika-home-card--create .rika-home-link {
+  border-color: rgba(236, 72, 153, 0.22);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.18), rgba(251, 113, 133, 0.10));
+}
+
+.rika-home-card--academic .rika-home-link {
+  border-color: rgba(167, 139, 250, 0.26);
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.18), rgba(96, 165, 250, 0.10));
+}
+
+.rika-home-note {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  border: 1px dashed rgba(236, 72, 153, 0.22);
+  background: rgba(255, 255, 255, 0.24);
+}
+
+@media (prefers-color-scheme: dark) {
+  .rika-home-note {
+    background: rgba(17, 24, 39, 0.24);
+  }
+}
+
+@media (max-width: 760px) {
+  .rika-home-grid {
+    grid-template-columns: 1fr;
+  }
+}
