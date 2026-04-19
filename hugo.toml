@@ -49,27 +49,31 @@ enableRobotsTXT = true
   url = "https://github.com/R1kaa"
 
 [[menu.main]]
-  identifier = "mad"
+  identifier = "works-mad"
   name = "MAD"
   url = "/works/mad/"
+  pageRef = "/works/mad"
   weight = 1
 
 [[menu.main]]
-  identifier = "vocaloid"
+  identifier = "works-vocaloid"
   name = "VOCALOID"
   url = "/works/vocaloid/"
+  pageRef = "/works/vocaloid"
   weight = 2
 
 [[menu.main]]
   identifier = "projects"
   name = "学术"
   url = "/projects/"
+  pageRef = "/projects"
   weight = 3
 
 [[menu.main]]
   identifier = "posts"
   name = "文章"
   url = "/posts/"
+  pageRef = "/posts"
   weight = 4
 
 [[menu.main]]
