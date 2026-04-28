@@ -1,4 +1,4 @@
-# Rika's Tech Blog
+# 去摘遥不可及的星。
 
 基于 Hugo + PaperMod 主题的个人技术博客
 
@@ -67,7 +67,3 @@ hugo server -D
 - `content/projects/mad/`（MAD）
 - `content/projects/vocaloid/`（VOCALOID）
 - `content/projects/`（工程/研究项目）
-
-## 示例文章
-
-- [毕设开题记录](content/projects/normal/thesis-progress.md) - 记录毕设进展
