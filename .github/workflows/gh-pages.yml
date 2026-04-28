@@ -31,10 +31,12 @@ jobs:
         run: |
           REPO="${GITHUB_REPOSITORY#*/}"
           OWNER="${GITHUB_REPOSITORY%%/*}"
-          if [[ "$REPO" == "$OWNER.github.io" ]]; then
-            echo "base_url=https://${OWNER}.github.io/" >> "$GITHUB_OUTPUT"
+          REPO_LOWER="$(echo "$REPO" | tr '[:upper:]' '[:lower:]')"
+          OWNER_LOWER="$(echo "$OWNER" | tr '[:upper:]' '[:lower:]')"
+          if [[ "$REPO_LOWER" == "${OWNER_LOWER}.github.io" ]]; then
+            echo "base_url=https://${OWNER_LOWER}.github.io/" >> "$GITHUB_OUTPUT"
           else
-            echo "base_url=https://${OWNER}.github.io/${REPO}/" >> "$GITHUB_OUTPUT"
+            echo "base_url=https://${OWNER_LOWER}.github.io/${REPO}/" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Build
