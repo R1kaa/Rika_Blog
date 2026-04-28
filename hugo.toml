@@ -25,8 +25,8 @@ enableRobotsTXT = true
     text = "Rika"
 
   [params.homeInfoParams]
-    Title = "去摘遥不可及的星。"
-    Content = "这里把内容收成两条线。\n\n随笔：日常记录、技术思考与长期写作。\n\n项目：研究、工程实践，以及我喜欢的 MAD / VOCALOID 作品。"
+    Title = "写随笔，也做项目。"
+    Content = "这里把内容收成两条线。\n\n随笔：日常记录、技术思考与长期写作。\n项目：研究、工程实践，以及我喜欢的 MAD / VOCALOID 作品。"
   
 [[params.socialIcons]]
   name = "bilibili"
