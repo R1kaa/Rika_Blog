@@ -6,16 +6,16 @@ enableRobotsTXT = true
 
 [params]
   author = "Rika"
-  description = "游戏开发 / AI / RL 学习笔记"
-  keywords = ["游戏开发", "人工智能", "强化学习", "Unity", "Python"]
+  description = "创作与学术的双线记录"
+  keywords = ["MAD", "VOCALOID", "项目", "技术写作", "研究记录"]
   defaultTheme = "auto"
   disableThemeToggle = false
   ShowReadingTime = true
-  ShowShareButtons = true
+  ShowShareButtons = false
   ShowPostNavLinks = true
-  ShowBreadCrumbs = true
+  ShowBreadCrumbs = false
   ShowCodeCopyButtons = true
-  ShowToc = true
+  ShowToc = false
   TocOpen = false
   disableSpecial1stPost = true
   mainSections = ["posts", "projects", "works"]
@@ -24,11 +24,11 @@ enableRobotsTXT = true
     text = "Rika"
 
   [params.homeInfoParams]
-    Title = "Rika's Tech Blog"
-    Content = "双线更新：创作（MAD / VOCALOID）与学术（GitHub / 项目）\n\n- 创作：MAD /works/mad/ ｜ VOCALOID /works/vocaloid/ ｜ B站主页\n- 学术：项目页 /projects/ ｜ GitHub 主页"
+    Title = "保持创作，也保持思考。"
+    Content = "这里记录两条并行的线索：\n\n创作：MAD、VOCALOID、视频表达与灵感归档。\n学术：项目、技术、研究与长期学习笔记。"
 
   [params.profileMode]
-    enabled = true
+    enabled = false
     title = "Rika"
     subtitle = "创作（MAD / VOCALOID） · 学术（GitHub / 项目）"
     imageUrl = "images/avatar.jpg"
@@ -91,6 +91,3 @@ enableRobotsTXT = true
 [markup.highlight]
   codeFences = true
   lineNos = true
-
-[markup.goldmark.renderer]
-  unsafe = true

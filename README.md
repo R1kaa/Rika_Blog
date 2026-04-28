@@ -35,6 +35,12 @@ blog/
 
 相关配置在 `hugo.toml`，主页内容在 `content/_index.md`，自定义样式在 `assets/css/extended/custom.css`，头像默认使用 `static/images/avatar.jpg`。
 
+主页图片建议放在：
+
+- `static/images/site/home-bg.jpg`：主页整体背景图
+- `static/images/site/create-card.jpg`：创作板块配图
+- `static/images/site/academic-card.jpg`：学术板块配图
+
 ## 本地预览
 
 ```bash
