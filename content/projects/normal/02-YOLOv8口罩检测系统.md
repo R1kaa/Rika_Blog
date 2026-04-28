@@ -62,3 +62,4 @@ description: "面向公共场所自动化安全监管需求，基于YOLOv8实现
 ---
 
 > 💡 技术栈：Python · YOLOv8 · Label Studio · PyTorch · FastAPI · OpenCV · ONNX
+

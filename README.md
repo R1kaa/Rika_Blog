@@ -7,11 +7,10 @@
 ```
 blog/
 ├── content/           # 文章内容
-│   ├── posts/        # 通用文章
-│   ├── projects/     # 项目记录
-│   └── works/        # 创作内容（MAD / VOCALOID）
+│   ├── posts/        # 随笔
+│   └── projects/     # 项目（含 MAD / VOCALOID / 学术记录）
 ├── assets/           # 自定义样式（PaperMod 扩展）
-├── static/           # 静态资源（头像、背景图等）
+├── static/           # 静态资源（头像等）
 ├── .github/          # GitHub Actions
 ├── hugo.toml         # Hugo 配置文件
 └── deploy.sh        # 部署脚本
@@ -19,27 +18,20 @@ blog/
 
 ## 内容板块
 
-- **posts/** - 通用技术文章
-- **projects/** - 项目记录（毕设、项目经历）
-- **works/** - 创作内容（MAD / VOCALOID）
+- **posts/** - 随笔、日常记录、技术思考
+- **projects/** - 项目总栏，统一收纳工程实践、研究记录、MAD、VOCALOID
 - **rl-notes/** - 强化学习笔记（可选，自行创建目录）
 - **llm-notes/** - 大模型笔记（可选，自行创建目录）
 - **notes/** - 其他学习笔记（可选，自行创建目录）
 
 ## 主页设计
 
-主页分为两大板块：
+全站主导航只保留两项：
 
-- **创作**：MAD 与 VOCALOID（入口：`/works/mad/`、`/works/vocaloid/`，并链接到 B 站主页）
-- **学术**：GitHub 与项目（入口：`/projects/` 与 GitHub 主页）
+- **随笔**：入口 `content/posts/`
+- **项目**：入口 `content/projects/`，其中包含 `projects/mad/` 与 `projects/vocaloid/`
 
 相关配置在 `hugo.toml`，主页内容在 `content/_index.md`，自定义样式在 `assets/css/extended/custom.css`，头像默认使用 `static/images/avatar.jpg`。
-
-主页图片建议放在：
-
-- `static/images/site/home-bg.jpg`：主页整体背景图
-- `static/images/site/create-card.jpg`：创作板块配图
-- `static/images/site/academic-card.jpg`：学术板块配图
 
 ## 本地预览
 
@@ -69,11 +61,13 @@ hugo server -D
 3. 写完文章后将 `draft: true` 改为 `draft: false`
 4. 推送后自动部署
 
-创作内容建议按分区写在：
+项目内容建议按分区写在：
 
-- `content/works/mad/`（MAD）
-- `content/works/vocaloid/`（VOCALOID）
+- `content/projects/normal/`（普通项目）
+- `content/projects/mad/`（MAD）
+- `content/projects/vocaloid/`（VOCALOID）
+- `content/projects/`（工程/研究项目）
 
 ## 示例文章
 
-- [毕设开题记录](content/projects/thesis-progress.md) - 记录毕设进展
+- [毕设开题记录](content/projects/normal/thesis-progress.md) - 记录毕设进展

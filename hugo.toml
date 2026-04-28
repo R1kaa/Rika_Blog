@@ -6,8 +6,8 @@ enableRobotsTXT = true
 
 [params]
   author = "Rika"
-  description = "创作与学术的双线记录"
-  keywords = ["MAD", "VOCALOID", "项目", "技术写作", "研究记录"]
+  description = "随笔与项目记录"
+  keywords = ["随笔", "项目", "MAD", "VOCALOID", "技术写作"]
   DateFormat = "2006-01-02"
   defaultTheme = "auto"
   disableThemeToggle = false
@@ -19,31 +19,14 @@ enableRobotsTXT = true
   ShowToc = false
   TocOpen = false
   disableSpecial1stPost = true
-  mainSections = ["posts", "projects", "works"]
+  mainSections = ["posts", "projects"]
 
   [params.label]
     text = "Rika"
 
   [params.homeInfoParams]
-    Title = "保持创作，也保持思考。"
-    Content = "这里记录两条并行的线索。\n\n创作：MAD、VOCALOID、视频表达与灵感归档。\n学术：项目、技术、研究与长期学习笔记。\n\n希望它更像一个可以长期停留的个人角落。"
-
-  [params.profileMode]
-    enabled = false
-    title = "Rika"
-    subtitle = "创作（MAD / VOCALOID） · 学术（GitHub / 项目）"
-    imageUrl = "images/avatar.jpg"
-    imageTitle = "avatar"
-    imageWidth = 140
-    imageHeight = 140
-
-  [[params.profileMode.buttons]]
-    name = "Bilibili"
-    url = "https://space.bilibili.com/518845311"
-
-  [[params.profileMode.buttons]]
-    name = "GitHub"
-    url = "https://github.com/R1kaa"
+    Title = "写随笔，也做项目。"
+    Content = "这里把内容收成两条线。\n\n随笔：日常记录、技术思考与长期写作。\n项目：研究、工程实践，以及我喜欢的 MAD / VOCALOID 作品。"
   
 [[params.socialIcons]]
   name = "bilibili"
@@ -54,25 +37,18 @@ enableRobotsTXT = true
   url = "https://github.com/R1kaa"
 
 [[menu.main]]
-  identifier = "works"
-  name = "创作"
-  url = "/works/"
-  pageRef = "/works"
+  identifier = "posts"
+  name = "随笔"
+  url = "/posts/"
+  pageRef = "/posts"
   weight = 1
 
 [[menu.main]]
   identifier = "projects"
-  name = "学术"
+  name = "项目"
   url = "/projects/"
   pageRef = "/projects"
   weight = 2
-
-[[menu.main]]
-  identifier = "posts"
-  name = "文章"
-  url = "/posts/"
-  pageRef = "/posts"
-  weight = 3
 
 [markup.highlight]
   codeFences = true

@@ -1,9 +1,9 @@
 ---
-title: "作品标题"
+title: "项目/作品标题"
 date: 1970-01-01T00:00:00Z
 draft: true
 tags: []
-categories: ["创作"]
+categories: ["项目"]
 description: ""
 cover:
   image: ""
@@ -14,4 +14,5 @@ cover:
 ## 链接
 
 - B站：
+- GitHub：
 - 其他：

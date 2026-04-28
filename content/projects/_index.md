@@ -1,9 +1,13 @@
----
+***
+
 title: "项目"
-description: "研究与工程项目索引"
+description: "研究、工程实践与并入的创作项目索引"
 draft: false
----
+------------
 
-这里汇总学术向项目与工程实践。
+这里统一汇总项目内容，包括：
 
-- GitHub：https://github.com/R1kaa
+- 研究与工程实践
+- MAD / VOCALOID
+- GitHub：<https://github.com/R1kaa>
+
