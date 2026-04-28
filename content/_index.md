@@ -5,12 +5,13 @@ draft: false
 
 ## 导航
 
-- 创作：`/works/mad/`、`/works/vocaloid/`、[Bilibili](https://space.bilibili.com/518845311)
-- 学术：`/projects/`、`/posts/`、[GitHub](https://github.com/R1kaa)
+- 创作：`/works/`，下分 `MAD` 与 `VOCALOID`
+- 学术：`/projects/` 与 `/posts/`
+- 外链：[Bilibili](https://space.bilibili.com/518845311) / [GitHub](https://github.com/R1kaa)
 
 ## 说明
 
-这里不追求把所有内容塞进首页，而是把首页当作一个安静的入口：
+我希望这里像一本持续更新的手帐，而不是一次性展示完所有内容的落地页。
 
 - 上面先说明我是谁、在写什么
 - 下面按时间列出最近更新
