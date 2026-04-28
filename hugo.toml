@@ -22,7 +22,7 @@ enableRobotsTXT = true
   mainSections = ["posts", "projects"]
 
   [params.label]
-    text = "去摘遥不可及的星。"
+    text = "Rika"
 
   [params.homeInfoParams]
     Title = "去摘遥不可及的星。"
